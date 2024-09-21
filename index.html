@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project_8</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- PC -->
+    <header class="header">
+        <div class="container_header">
+            <div class="header__inner">
+                <div class="box__email">
+                    <img src="./assets/image/icon__mail.svg" alt="" class="header_icon">
+                    <a href="#!" class="header__address">hi@arif.interactive</a>
+                    <label for="menu__checkbox" class="toggle-menu">
+                        <img src="./assets/image/menu_mobile.svg" alt="">
+                    </label>
+                </div>
+                <img src="./assets/image/logo.svg" alt="" class="logo">
+                <nav class="navbar">
+                    <ul class="header__list" id="pc-nav">
+                        <li class="header__item"><a href="#!" class="header_link">Projects</a></li>
+                        <li class="header__item"><a href="#!" class="header_link">Journey</a></li>
+                        <li class="header__item"><a href="#!" class="header_link">Service</a></li>
+                        <li class="header__item"><a href="#!" class="header_link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Mobile -->
+    <header class="header__mobile">
+        <input type="checkbox" class="menu__checkbox" id="menu__checkbox" hidden>
+        <label for="menu__checkbox" class="menu__overlay"></label>
+        <!-- content -->
+        <div class="menu__drawer">
+            <a href="#"><img src="./assets/image/logo.svg" alt="" class="mobile__logo"></a>
+            <ul id="mobile_nav">
+
+            </ul>
+            <script>
+                const pcNav = document.querySelector('#pc-nav')
+                const mobieNav = document.querySelector('#mobile-nav')
+                // copy from Pc nav ->Nav mobile
+                mobile_nav.innerHTML = pcNav.innerHTML;
+            </script>
+
+        </div>
+
+    </header>
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="hero_media">
+                        <figure class="hero__image">
+                            <img src="./assets/image/header_img.png" alt="" class="hero__img">
+                        </figure>
+                        <img src="./assets/image/decor_01_header.svg" alt="" class="decor_01_header">
+                        <img src="./assets/image/decor_02_header.svg" alt="" class="decor_02_header">
+                    </div>
+                    <div class="hero_content">
+                        <h1 class="section__heading_1">An Interactive Designer</h1>
+                        <p class="section_desc header__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                            urna, non
+                            nisl tincidunt ut elementum turpis.</p>
+                        <div class="cta__wrap">
+                            <a href="#!" class="btn cta_btn">Book a Call</a>
+                            <a href="#!" class="cta_link">My Works</a>
+                        </div>
+                        <div class="social">
+                            <p class="section_desc social__desc">Follow me on:</p>
+                            <div class="list__social">
+                                <a href="#!">
+                                    <figure class="social_item"><img src="./assets/image/be_icon.svg" alt=""
+                                            class="social_icon"></figure>
+                                </a>
+                                <a href="#!">
+                                    <figure class="social_item"><img src="./assets/image/ball_icon.svg" alt=""
+                                            class="social_icon"></figure>
+                                </a>
+                                <a href="#!">
+                                    <figure class="social_item"><img src="./assets/image/insta_icon.svg" alt=""
+                                            class="social_icon"></figure>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- special -->
+        <section class="special">
+            <div class="container">
+                <div class="client_wrap">
+                    <div class="text_block">
+                        <p class="text_special">Meet my
+                            recent clients</p>
+                    </div>
+                    <div class="clients_list">
+                        <img src="./assets/image/Google.svg" alt="" class="client_item">
+                        <img src="./assets/image/warner bros.svg" alt="" class="client_item">
+                        <img src="./assets/image/Mailchamp.svg" alt="" class="client_item">
+                        <img src="./assets/image/Adobe.svg" alt="" class="client_item">
+                        <img src="./assets/image/Upwork.svg" alt="" class="client_item">
+                        <img src="./assets/image/Creative cloude.svg" alt="" class="client_item">
+                        <img src="./assets/image/Woocommercde.svg" alt="" class="client_item">
+                        <img src="./assets/image/Canva.svg" alt="" class="client_item">
+                    </div>
+                </div>
+                <section class="special__content">
+                    <h2 class="section__heading_2 special_title">Specialities</h2>
+                    <p class="section__desc special_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                        urna,
+                        non nisl tincidunt ut elementum turpis.</p>
+                    <div class="special__list">
+                        <div class="row row-cols-lg-3">
+                            <div class="col-lg-4 col-12 special__item--wrap">
+                                <div class="special_item">
+                                    <img src="./assets/image/lamp.svg" alt="" class="icon_special">
+                                    <p class="special_subtitle">Product design</p>
+                                    <p class="section__desc special_subdesc">Lorem ipsum dolor sit amet, solor
+                                        adipiscing
+                                        elit.
+                                        Non nisl solor
+                                        ut elementum turpis.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12 special__item--wrap">
+                                <div class="special_item">
+                                    <img src="./assets/image/pencil.svg" alt="" class="icon_special">
+                                    <p class="special_subtitle">UI/UX Design</p>
+                                    <p class="section__desc special_subdesc">Lorem ipsum dolor sit amet, solor
+                                        adipiscing
+                                        elit.
+                                        Non nisl solor
+                                        ut elementum turpis.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12 special__item--wrap">
+                                <div class="special_item">
+                                    <img src="./assets/image/phone.svg" alt="" class="icon_special">
+                                    <p class="special_subtitle">Interactive design</p>
+                                    <p class="section__desc special_subdesc">Lorem ipsum dolor sit amet, solor
+                                        adipiscing
+                                        elit.
+                                        Non nisl solor
+                                        ut elementum turpis.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="dot__list">
+                            <div class="dot__item"></div>
+                            <div class="dot__item active_dot"></div>
+                            <div class="dot__item"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </section>
+        <!-- Project -->
+        <section class="project">
+            <div class="container">
+                <div class="project__inner">
+                    <div class="content__row">
+                        <h2 class="section__heading_2 project__title">Take a look at
+                            my recent projects</h2>
+                        <p class="section__desc project__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            In urna, non nisl tincidunt ut elementum turpis.</p>
+                    </div>
+                    <div class="project__media--wrap">
+                        <div class="row row-cols-lg-2">
+                            <!-- item1 -->
+                            <div class="col-lg-6 col-12">
+                                <div class="project__item">
+                                    <div class="project__item--content">
+                                        <p class="project__item--title"><a href="#!" class="project__item--link">Wally
+                                                Website</a>
+                                        </p>
+                                        <p class="project__item--desc">Lorem ipsum dolor amet, consectetur adipiscing st
+                                            elit.</p>
+                                        <a href="#!" class="project__link">Case Study</a>
+                                    </div>
+                                    <figure class="project__media">
+                                        <img src="./assets/image/project__img1.png" alt="" class="project__img">
+
+                                    </figure>
+                                    <img src="./assets/image/project__decor.svg" alt="" class="project__decor">
+
+                                </div>
+                            </div>
+                            <!-- item2 -->
+                            <div class="col-lg-6 col-12">
+                                <div class="project__item">
+                                    <div class="project__item--content">
+                                        <p class="project__item--title"><a href="#!" class="project__item--link">Banking
+                                                App</a>
+                                        </p>
+                                        <p class="project__item--desc">Lorem ipsum dolor amet, consectetur adipiscing st
+                                            elit.</p>
+                                        <a href="#!" class="project__link">Case Study</a>
+                                    </div>
+                                    <figure class="project__media">
+                                        <img src="./assets/image/project__img2.png" alt="" class="project__img">
+                                    </figure>
+                                    <img src="./assets/image/project__decor.svg" alt="" class="project__decor">
+                                </div>
+                            </div>
+                            <!-- item3 -->
+                            <div class="col-lg-6 col-12">
+                                <div class="project__item">
+                                    <div class="project__item--content">
+                                        <p class="project__item--title"><a href="#!" class="project__item--link">Web
+                                                App</a></p>
+                                        <p class="project__item--desc">Lorem ipsum dolor amet, consectetur adipiscing st
+                                            elit.</p>
+                                        <a href="#!" class="project__link">Case Study</a>
+                                    </div>
+                                    <figure class="project__media">
+                                        <img src="./assets/image/project__img3.png" alt="" class="project__img">
+                                    </figure>
+                                    <img src="./assets/image/project__decor.svg" alt="" class="project__decor">
+                                </div>
+                            </div>
+                            <!-- item4 -->
+                            <div class="col-lg-6 col-12">
+                                <div class="project__item">
+                                    <div class="project__item--content">
+                                        <p class="project__item--title"><a href="#!" class="project__item--link">Oculus
+                                                Website</a></p>
+                                        <p class="project__item--desc">Lorem ipsum dolor amet, consectetur adipiscing st
+                                            elit.</p>
+                                        <a href="#!" class="project__link">Case Study</a>
+                                    </div>
+                                    <figure class="project__media">
+                                        <img src="./assets/image/project__img4.png" alt="" class="project__img">
+                                    </figure>
+                                    <img src="./assets/image/project__decor.svg" alt="" class="project__decor">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- button -->
+                    <a href="#!" class="btn project__btn">All Projects</a>
+                </div>
+            </div>
+        </section>
+        <!-- Designer -->
+        <section class="Design">
+            <div class="container">
+                <div class="design__inner">
+                    <div class="desgin__content">
+                        <span class="design__span">Hey,,,,It’s Arif👋</span>
+                        <h2 class="section__heading_2 design__title">Interactive Designer</h2>
+                        <p class="section__desc design__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            In urna, non nisl tincidunt ut elementum turpis.</p>
+                    </div>
+                    <div class="design__statistic">
+                        <div class="design_sta__list">
+                            <div class="design_sta__item">
+                                <span class="design__number">08+</span>
+                                <p class="design_sta__desc">Years Experience</p>
+                            </div>
+                            <div class="design_sta__item">
+                                <span class="design__number">21+</span>
+                                <p class="design_sta__desc">Features & Awards</p>
+                            </div>
+                            <div class="design_sta__item">
+                                <span class="design__number">97%</span>
+                                <p class="design_sta__desc">Clients Rating</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video__wrap">
+                        <figure class="design__img--wrap">
+                            <img src="./assets/image/design__img.png" alt="" class="design__img">
+                        </figure>
+                        <div class="box__play">
+                            <img src="./assets/image/play.svg" alt="" class="design__play">
+                        </div>
+                        <div class="intro_video">
+                            <p class="text__intro">INTRO VIDEO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- feedback -->
+        <section class="feedback">
+            <div class="container">
+                <section class="feedback__inner">
+                    <section class="feedback__header">
+                        <h2 class="section__heading_2 feedback__title">What people says</h2>
+                        <p class="section__desc feedback__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            In urna, non
+                            nisl tincidunt ut elementum turpis.</p>
+                    </section>
+                    <div class="feedback__body">
+                        <p class="feedback__user">“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                            culpa.”</p>
+                        <div class="user__wrap">
+                            <figure class="avatar"><img src="./assets/image/UIface.png" alt="" class="UIface"></figure>
+                            <p class="name__user">Joe Elia</p>
+                        </div>
+                        <p class="user__desc">User Interface Design at PCL Lab</p>
+
+                        <div class="btn__slider">
+                            <div class="dot_slider">
+                            </div>
+                            <div class="dot_slider">
+                            </div>
+                            <div class="dot_slider dot__active">
+                            </div>
+                            <div class="dot_slider">
+                            </div>
+                            <div class="dot_slider">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <img src="./assets/image/feedback_decor1.png" alt="" class="feedback_decor1">
+                <img src="./assets/image/feedback_decor2.png" alt="" class="feedback_decor2">
+            </div>
+        </section>
+        <!-- Question -->
+        <section class="Question">
+            <div class="container">
+                <section class="question__inner">
+                    <h2 class="section__heading_2 question__title">A few questions
+                        clients normally ask me</h2>
+                    <div class="question_list">
+                        <!-- item1 -->
+                        <div class="question__item">
+                            <input type="checkbox" name="show_answer" id="show_answer1" hidden>
+                            <div class="question__wrap">
+                                <label for="show_answer1" class="label__btn question__item--first">
+                                    <button class="cta__answer">+</button>
+                                    <button class="cta__answer cta__hidden">-</button>
+                                </label>
+                                <h3 class="question__subtitle">What is your hourly rate?</h3>
+                                <p class="answer_question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                                    urna,
+                                    non nisl tincidunt ut elementum turpis.</p>
+                            </div>
+
+                        </div>
+                        <!-- item2 -->
+                        <div class="question__item">
+                            <input type="checkbox" name="show_answer" id="show_answer2" hidden>
+                            <div class="question__wrap">
+                                <label for="show_answer2" class="label__btn">
+                                    <button class="cta__answer">+</button>
+                                    <button class="cta__answer cta__hidden">-</button>
+                                </label>
+                                <h3 class="question__subtitle">What type of projects do you take on?</h3>
+                                <p class="answer_question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                                    urna,
+                                    non nisl tincidunt ut elementum turpis.</p>
+                            </div>
+
+                        </div>
+                        <!-- item3 -->
+                        <div class="question__item">
+                            <input type="checkbox" name="show_answer" id="show_answer3" hidden>
+                            <div class="question__wrap">
+                                <label for="show_answer3" class="label__btn">
+                                    <button class="cta__answer">+</button>
+                                    <button class="cta__answer cta__hidden">-</button>
+                                </label>
+                                <h3 class="question__subtitle">How do you charge for projects ?</h3>
+                                <p class="answer_question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                                    urna,
+                                    non nisl tincidunt ut elementum turpis.</p>
+                            </div>
+
+                        </div>
+                        <!-- item4 -->
+                        <div class="question__item">
+                            <input type="checkbox" name="show_answer" id="show_answer4" hidden>
+                            <div class="question__wrap">
+                                <label for="show_answer4" class="label__btn">
+                                    <button class="cta__answer">+</button>
+                                    <button class="cta__answer cta__hidden">-</button>
+                                </label>
+                                <h3 class="question__subtitle">What time-zone do you work in?</h3>
+                                <p class="answer_question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                                    urna,
+                                    non nisl tincidunt ut elementum turpis.</p>
+                            </div>
+
+                        </div>
+                        <!-- item5 -->
+                        <div class="question__item">
+                            <input type="checkbox" name="show_answer" id="show_answer5" hidden>
+                            <div class="question__wrap">
+                                <label for="show_answer5" class="label__btn">
+                                    <button class="cta__answer">+</button>
+                                    <button class="cta__answer cta__hidden">-</button>
+                                </label>
+                                <h3 class="question__subtitle">How often can we communicate?</h3>
+                                <p class="answer_question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                                    urna,
+                                    non nisl tincidunt ut elementum turpis.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!-- Atmosphere -->
+        <section class="Atmosphere">
+            <div class="container">
+                <section class="Atmosphere__inner">
+                    <section class="atmosphere__content">
+                        <h2 class="section__heading_2 atmosphere__title">My atmosphere</h2>
+                        <p class="section__desc atmosphere__desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non
+                            nisl tincidunt ut elementum turpis.</p>
+                        <a href="#!" class="cta__link">@interaction_arif</a>
+                    </section>
+                </section>
+                <div class="atmosphere__media">
+                    <div class="row row-cols-3 atmosphere__row">
+                        <div class="col-lg-4 col-12">
+                            <img src="./assets/image/atmosphere__img.jpg" alt="" class="atmosphere__img">
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <img src="./assets/image/atmosphere__img1.jpg" alt="" class="atmosphere__img">
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <img src="./assets/image/atmosphere__img2.jpg" alt="" class="atmosphere__img">
+                        </div>
+
+                    </div>
+                    <div class="dot__list">
+                        <div class="dot__item"></div>
+                        <div class="dot__item"></div>
+                        <div class="dot__item active_dot"></div>
+                        <div class="dot__item"></div>
+                        <div class="dot__item"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact -->
+        <section class="contact">
+            <div class="container">
+                <div class="contact__inner">
+                    <span class="span__contact">🥳</span>
+                    <h2 class="section__heading_2 contact__title">Got a project? Let's talk</h2>
+                    <p class="section__desc contact__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                        urna, non nisl
+                        tincidunt ut elementum turpis.</p>
+                    <a href="#!" class="btn contact__btn">Book a Call</a>
+                    <img src="./assets/image/feedback_decor1.png" alt="" class="contact_img contact_img1">
+                    <img src="./assets/image/contact__img_01.png" alt="" class="contact_img contact_img2">
+                    <img src="./assets/image/contact__img_02.png" alt="" class="contact_img contact_img3">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="header__inner footer__box">
+                    <div class="box__email">
+                        <img src="./assets/image/icon__mail.svg" alt="" class="header_icon">
+                        <a href="#!" class="header__address">hi@arif.interactive</a>
+                    </div>
+                    <img src="./assets/image/logo.svg" alt="" class="logo">
+                    <nav class="navbar">
+                        <ul class="header__list">
+                            <li class="header__item"><a href="#!" class="header_link">Projects</a></li>
+                            <li class="header__item"><a href="#!" class="header_link">Journey</a></li>
+                            <li class="header__item"><a href="#!" class="header_link">Service</a></li>
+                            <li class="header__item"><a href="#!" class="header_link">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="copyright__wrap">
+                    <p class="copyright__text1">©interactiveArif 2021. All rights reserved.</p>
+                    <p class="copyright__text2">Privacy Policy | Terms of Conditions</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
